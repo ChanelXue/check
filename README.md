@@ -1,11 +1,11 @@
-联合学习
+联合学习:blush:
 ===========================
 Bi-LSTM-Bi-TreeLSTM
 ------
 Bi-LSTM-Bi-SeqLSTM
 ------
 	
-|Author|SHI:blush:|
+|Author|SHI|
 |---|---
 
 # 环境配置:
