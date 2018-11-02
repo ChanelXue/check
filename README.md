@@ -5,7 +5,7 @@ Bi-LSTM-Bi-TreeLSTM
 Bi-LSTM-Bi-SeqLSTM
 ------
 	
-|Author|SHI|
+|Author|SHI:blush:|
 |---|---
 
 
@@ -38,12 +38,26 @@ Bi-LSTM-Bi-SeqLSTM
 	python3 train_valid_split.py
 ### 4、修改yaml配置文件
 	cd joint-LSTM-ER/yaml    parameter-check.yaml
-### 5、
+### 5、run models
 ##### onlyner:
 	nohup build/relation/RelationExtraction_onlyner --train -y yaml/parameter-onlyner.yaml > myout-onlyner.file 2>&1 &
 	build/relation/RelationExtraction_onlyner --test -y yaml/parameter-onlyner.yaml
 	python NER_evaluate.py 
-
 ##### regulation:
 	python regulation_process.py
 	python evaluate_regulation.py
+##### sequence_pip:
+	nohup build/relation/RelationExtraction_seqpip --train -y yaml/parameter-seqpip.yaml > myout-seqpip.file 2>&1 &
+	cd data/corpus/corpus_seqpip/test
+	find ./ -name "*.ann" | xargs rm -rf
+	修改onlyner.yaml文件重新测试seq的test数据,predictionExtension:ann
+	build/relation/RelationExtraction_ner --test -y yaml/parameter-onlyner.yaml
+	build/relation/RelationExtraction_pip --test -y yaml/parameter-seqpip.yaml
+	python evaluation_split.py 
+##### sequence_joint:
+	nohup build/relation/RelationExtraction_seqjoint --train -y yaml/parameter-seqjoint.yaml > myout-seqjoint.file 2>&1 &
+	build/relation/RelationExtraction_seqjoint --test -y yaml/parameter-seqjoint.yaml
+	python evaluation_joint.py 
+	python NER_evaluation_joint.py 
+##### eg:
+	nohup build/relation/RelationExtraction_seqjoint+0.6-0.4 --train -y yaml/parameter-seqjoint+0.6-0.4.yaml > myout-seqjoint+0.6-0.4.file 2>&1 &
