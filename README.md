@@ -99,7 +99,7 @@ BIOHD1234
 ### 2、移动文件、重命名到 模型/data/attribute_data/raw_model_data
 ### 3、生成特征dict
 ### 4、share文件整理
-	map、goldresult、pos、infor.txt等
+_map、goldresult、pos、infor.txt等_
 ### 5、run models
 ##### eg:
 	cd BIOHD/src_bilstm_crf_BIOHD/
@@ -116,7 +116,7 @@ Multi-Label
 ### 2、移动文件、重命名到 模型/data/attribute_data/raw_model_data
 ### 3、生成特征dict
 ### 4、share文件整理
-	map、goldresult、pos、infor.txt等
+_map、goldresult、pos、infor.txt等_
 ### 5、run models
 ##### eg:
 	cd Multi-Label/src_bilstm_crf_MultiLabel/
