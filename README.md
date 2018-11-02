@@ -39,11 +39,11 @@ Bi-LSTM-Bi-SeqLSTM
 ### 4、修改yaml配置文件
 	cd joint-LSTM-ER/yaml    parameter-check.yaml
 ### 5、
-onlyner:
+##### onlyner:
 	nohup build/relation/RelationExtraction_onlyner --train -y yaml/parameter-onlyner.yaml > myout-onlyner.file 2>&1 &
 	build/relation/RelationExtraction_onlyner --test -y yaml/parameter-onlyner.yaml
 	python NER_evaluate.py 
 
-regulation:
+##### regulation:
 	python regulation_process.py
 	python evaluate_regulation.py
