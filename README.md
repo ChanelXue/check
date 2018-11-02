@@ -77,7 +77,8 @@ Bi-LSTM-CRF-Bi-SeqLSTM
 	zsh dnnfeature_extract.sh ../../ChineseDate/test ../data_out/test/
 	zsh dnnfeature_extract.sh ../../ChineseDate/train ../data_out/train/
 	_在src/getBIOTagForNER.py添加约束_
-### 2、移动文件、重命名到 模型/data/attribute_data/raw_model_data
+### 2、移动文件
+_重命名到 模型/data/attribute_data/raw_model_data
 ### 3、生成特征dict
 	cd data_generation/src
 	python fea_process.py
@@ -96,7 +97,8 @@ BIOHD1234
 	zsh dnnfeature_extract.sh ../../ChineseDate/valid ../data_out/BIOHD/valid/
 	zsh dnnfeature_extract.sh ../../ChineseDate/test ../data_out/BIOHD/test/
 	zsh dnnfeature_extract.sh ../../ChineseDate/train ../data_out/BIOHD/train/
-### 2、移动文件、重命名到 模型/data/attribute_data/raw_model_data
+### 2、移动文件
+_重命名到 模型/data/attribute_data/raw_model_data
 ### 3、生成特征dict
 ### 4、share文件整理
 _map、goldresult、pos、infor.txt等_
@@ -113,7 +115,8 @@ Multi-Label
 	zsh dnnfeature_extract.sh ../../ChineseDate/valid ../data_out/Multi-Label/valid/
 	zsh dnnfeature_extract.sh ../../ChineseDate/test ../data_out/Multi-Label/test/
 	zsh dnnfeature_extract.sh ../../ChineseDate/train ../data_out/Multi-Label/train/
-### 2、移动文件、重命名到 模型/data/attribute_data/raw_model_data
+### 2、移动文件
+_重命名到 模型/data/attribute_data/raw_model_data
 ### 3、生成特征dict
 ### 4、share文件整理
 _map、goldresult、pos、infor.txt等_
