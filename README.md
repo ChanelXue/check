@@ -49,7 +49,7 @@ Bi-LSTM-Bi-SeqLSTM
 	nohup build/relation/RelationExtraction_seqpip --train -y yaml/parameter-seqpip.yaml > myout-seqpip.file 2>&1 &
 	cd data/corpus/corpus_seqpip/test
 	find ./ -name "*.ann" | xargs rm -rf
-	修改onlyner.yaml文件重新测试seq的test数据,predictionExtension:ann
+	_修改onlyner.yaml文件重新测试seq的test数据,predictionExtension:ann_
 	build/relation/RelationExtraction_ner --test -y yaml/parameter-onlyner.yaml
 	build/relation/RelationExtraction_pip --test -y yaml/parameter-seqpip.yaml
 	python evaluation_split.py 
@@ -60,3 +60,36 @@ Bi-LSTM-Bi-SeqLSTM
 	python NER_evaluation_joint.py 
 ##### eg:
 	nohup build/relation/RelationExtraction_seqjoint+0.6-0.4 --train -y yaml/parameter-check.yaml > myout-seqjoint+0.6-0.4.file 2>&1 &
+	
+
+Bi-LSTM-CRF-Bi-SeqLSTM
+------
+# 环境配置:
+	python 2.7+
+	python 3
+	tensorflow
+***
+# 使用方法:
+### 1、处理语料文件
+	cd data/data_generation/run
+	_运行zsh dnnfeature_extract.sh，通过查看log_dnnfeatures_extract.log看运行是否成功_
+	zsh dnnfeature_extract.sh ../../ChineseDate/valid ../data_out/valid/
+	zsh dnnfeature_extract.sh ../../ChineseDate/test ../data_out/test/
+	zsh dnnfeature_extract.sh ../../ChineseDate/train ../data_out/train/
+	_在src/getBIOTagForNER.py添加约束_
+### 2、移动文件、重命名到 模型/data/attribute_data/raw_model_data
+### 3、生成特征dict
+	cd data_generation/src
+	python fea_process.py
+### 4、run models	
+##### eg:
+	cd lstm_crf_constriant/src_bilstm_crf_no_pretrian/
+	nohup python run.py > myout.file 2>&1 &
+	
+BIOHD1234
+------	
+# 使用方法:
+
+Multi-Label
+------	
+# 使用方法:
