@@ -8,7 +8,6 @@ Bi-LSTM-Bi-SeqLSTM
 |Author|SHI:blush:|
 |---|---
 
-
 # 环境配置:
 	python 2.7+
 	python 3
