@@ -59,4 +59,4 @@ Bi-LSTM-Bi-SeqLSTM
 	python evaluation_joint.py 
 	python NER_evaluation_joint.py 
 ##### eg:
-	nohup build/relation/RelationExtraction_seqjoint+0.6-0.4 --train -y yaml/parameter-seqjoint+0.6-0.4.yaml > myout-seqjoint+0.6-0.4.file 2>&1 &
+	nohup build/relation/RelationExtraction_seqjoint+0.6-0.4 --train -y yaml/parameter-check.yaml > myout-seqjoint+0.6-0.4.file 2>&1 &
