@@ -8,7 +8,7 @@ Bi-LSTM-Bi-SeqLSTM
 |Author|16S051014|
 |---|---
 
-# 环境配置:
+## 环境配置:
 	python 2.7+
 	python 3
 	Fedora Core 22
@@ -25,7 +25,7 @@ Bi-LSTM-Bi-SeqLSTM
 	make
 	cd ..
 ***
-# 使用方法:
+## 使用方法:
 ### 1、首先，需要提取训练集中的数据和测试集中的数据
 	cd ChineseData/src 
 	python get_1_to_n_datafile.py
@@ -64,12 +64,12 @@ Bi-LSTM-Bi-SeqLSTM
 
 Bi-LSTM-CRF-Bi-SeqLSTM
 ------
-# 环境配置:
+## 环境配置:
 	python 2.7+
 	python 3
 	tensorflow
 ***
-# 使用方法:
+## 使用方法:
 ### 1、处理语料文件
 	cd data/data_generation/run
 	_运行zsh dnnfeature_extract.sh，通过查看log_dnnfeatures_extract.log看运行是否成功_
@@ -89,7 +89,7 @@ _重命名到 模型/data/attribute_data/raw_model_data
 	
 BIOHD1234
 ------	
-# 使用方法:
+## 使用方法:
 ### 1、将数据转换为BIOHD1234
 
 	cd data/data_generation/run_BIOHD_Multi
@@ -108,7 +108,7 @@ _map、goldresult、pos、infor.txt等_
 	nohup python run.py > myout.file 2>&1 &
 Multi-Label
 ------	
-# 使用方法:
+## 使用方法:
 ### 1、将数据转换为Multi-Label
 	cd data/data_generation/run_BIOHD_Multi
 	_运行zsh dnnfeature_extract.sh，通过查看log_dnnfeatures_extract.log看运行是否成功_
