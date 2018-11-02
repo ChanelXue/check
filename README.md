@@ -77,6 +77,8 @@ Bi-LSTM-CRF-Bi-SeqLSTM
 	zsh dnnfeature_extract.sh ../../ChineseDate/test ../data_out/test/
 	zsh dnnfeature_extract.sh ../../ChineseDate/train ../data_out/train/
 	_在src/getBIOTagForNER.py添加约束_
+	_斜体2_
+	|`_斜体2_`| _斜体2_|
 ### 2、移动文件、重命名到 模型/data/attribute_data/raw_model_data
 ### 3、生成特征dict
 	cd data_generation/src
