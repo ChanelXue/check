@@ -5,7 +5,7 @@ Bi-LSTM-Bi-TreeLSTM
 Bi-LSTM-Bi-SeqLSTM
 ------
 	
-|Author|16S051014 SX|
+|Author|16S051014|
 |---|---
 
 # 环境配置:
