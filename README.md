@@ -1,7 +1,9 @@
-Bi-LSTM-Bi-TreeLSTM联合学习
+联合学习
 ===========================
-Bi-LSTM-Bi-SeqLSTM联合学习
-===========================
+Bi-LSTM-Bi-TreeLSTM
+------
+Bi-LSTM-Bi-SeqLSTM
+------
 
 ****
 	
@@ -26,7 +28,7 @@ Bi-LSTM-Bi-SeqLSTM联合学习
 	make
 	cd ..
 
-#使用方法
+#使用方法:
 1、首先，需要提取训练集中的数据和测试集中的数据
 	cd ChineseData/src 
 	python get_1_to_n_datafile.py
