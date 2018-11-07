@@ -116,7 +116,7 @@ Multi-Label
 	zsh dnnfeature_extract.sh ../../ChineseDate/test ../data_out/Multi-Label/test/
 	zsh dnnfeature_extract.sh ../../ChineseDate/train ../data_out/Multi-Label/train/
 ### 2、移动文件
-_重命名到 模型/data/attribute_data/raw_model_data
+_重命名到 模型/data/attribute_data/raw_model_data_
 ### 3、生成特征dict
 ### 4、share文件整理
 _map、goldresult、pos、infor.txt等_
